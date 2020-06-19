@@ -1,0 +1,102 @@
+@import "../../../assets/main.scss";
+
+.navbar {
+  @include flex-between;
+  width: 100%;
+  background: $white;
+  color: $base-text-color;
+  font-size: $text-md;
+  line-height: 11px;
+}
+
+.navLinks {
+  @include flex-center;
+  border-right: $grey-border;
+  text-align: center;
+}
+
+.logoWrapper {
+  border-right: $grey-border;
+}
+
+.logo {
+  width: 46px;
+  height: 46px;
+  margin: 17px 44px 17px 40px;
+}
+
+.navItemWrapper {
+  @include flex-center;
+  flex-direction: column;
+  margin: 18px 20px;
+
+  i{
+    color: black;
+    cursor: pointer;
+
+    &:hover{
+      color: $blue;
+    }
+  }
+}
+
+.navItem {
+  text-decoration: none;
+  color: $base-text-color;
+  margin-top: 10px;
+
+  &:hover{
+    color: $blue;
+  }
+}
+
+.searchBarWrapper {
+  border-right: $grey-border;
+}
+
+.searchBar {
+  border: none;
+  font-size: $text-lg;
+  font-weight: 300;
+  padding: 10px 30px;
+}
+
+.profileOwner {
+  @include flex-between;
+}
+
+.navAvatar {
+  margin: 15px;
+}
+
+.navProfileName {
+  display: inline-block;
+  padding: 10px;
+}
+
+.navProfileNameSpan {
+  font-weight: $light-font;
+}
+
+.navProfileViewCount {
+  font-weight: $light-font;
+  padding: 10px;
+
+  strong{
+    margin-left: 5px;
+    color: #02B033;
+  }
+}
+
+.navSubmenu {
+  text-align: center;
+  border-right: $grey-border;
+  border-left: $grey-border;
+  margin-right: 40px;
+  padding: 18px 23px;
+}
+
+.navSubmenuTitle {
+  margin-top: 21px;
+}
+

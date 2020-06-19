@@ -1,0 +1,152 @@
+@import "../../../assets/main.scss";
+
+
+// ---------------------------------     TEXT INPUT STYLE CODES START
+.textInputContent {
+  min-height: 140px;
+}
+
+.textInputCard {
+  max-width: 850px;
+  margin: auto;
+  background-color: $white;
+  margin-top: 30px;
+  padding: 10px;
+  text-align: left;
+}
+
+.textInputTitle {
+  font-size: $text-sm;
+  font-weight: $bold-font;
+  border-bottom: $grey-border;
+  margin: 0 10px;
+  padding: 10px 0;
+}
+
+.todosSeperator {
+  @include flex-center;
+  max-width: 850px;
+  margin: 30px auto;
+  font-size: $text-sm;
+  font-weight: $bold-font;
+
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    border-bottom: $grey-border;
+  }
+
+  &::before {
+    margin-right: 0.25rem;
+  }
+
+  &::after {
+    margin-left: 0.25rem;
+  }
+}
+// ---------------------------------     TEXT INPUT STYLE CODES END
+
+
+
+
+// ---------------------------------     SEARCH INPUT STYLE CODES START
+
+.search{
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  
+.searchInput {
+  margin: 10px;
+  width: 100%;
+  border: none;
+  font-weight: $light-font;
+  padding: 10px 0;
+
+  &::placeholder{
+    color: gray;
+    opacity: 0.30;
+    font-size: 18px; 
+  }
+
+}
+
+.searchIcons{
+  padding: 15px 25px;
+
+  a{
+    margin-right:40px;
+    font-size: 19px;
+    padding: 7px;
+    border-radius: 4px;
+  }
+  a:nth-child(1){
+    color: gray;
+    opacity: 0.20;
+  }
+  a:nth-child(2){
+    background-color: $blue;
+    color: $white;
+  }
+}
+  
+}
+
+// ---------------------------------     SEARCH INPUT STYLE CODES END
+
+
+
+
+// ---------------------------------     POST INPUT STYLE CODES START
+
+
+.post {
+
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+
+  textarea{
+    margin: 20px 15px;
+    max-width: 550px !important; 
+    height: 50px;
+    max-height: 80px;
+    border: none;
+
+    &::placeholder{
+      color: gray;
+      opacity: 0.30;
+      font-size: 18px; 
+    }
+
+    &:hover{
+      border: none;
+    }
+
+    &:focus{
+      border: none;
+    }
+
+  }
+
+
+  .postIcons{
+    padding: 45px 30px;
+  
+    a{
+      margin:0px 10px;
+      font-size: 19px;
+      padding: 7px;
+      border-radius: 4px;
+    }
+    a:nth-child(1),a:nth-child(2),a:nth-child(3){
+      color: gray;
+      opacity: 0.20;
+    }
+    a:nth-child(4){
+      background-color: $blue;
+      color: $white;
+    }
+  }
+
+
+}

@@ -1,0 +1,27 @@
+@import "../../../assets/main.scss";
+
+
+.aboutSection {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: $white;
+  
+ a {
+      font-size: $text-sm;
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+  
+  .aboutTitle {
+    font-size: $text-lg;
+    font-weight: $bold-font;
+    margin: 10px 0;
+  }
+  
+  .aboutText {
+    font-size: $text-md;
+    margin: 10px 0;
+    line-height: 25px;
+  }

@@ -1,0 +1,38 @@
+@import "../../../assets/main.scss";
+  
+  .projectSection {
+    max-width: 850px;
+    margin: auto;
+    background-color: $white;
+    padding: 20px;
+  }
+  
+  .projectSectionTitle {
+    font-size: $text-lg;
+    font-weight: $bold-font;
+    margin-bottom: 15px;
+  }
+  
+  .projectShowcase {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .projectImg {
+    // width: 250px;
+    // height: 160px;
+    margin-bottom: 15px;
+  }
+  
+  .projectTitle {
+    font-size: $text-md;
+    font-weight: $bold-font;
+    margin-bottom: 5px;
+  }
+  
+  .projectText {
+    font-size: $text-sm;
+  }
+  

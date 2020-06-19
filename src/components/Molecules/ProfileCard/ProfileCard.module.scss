@@ -1,0 +1,37 @@
+@import "../../../assets/main.scss";
+
+.cardBody{
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+
+    img{
+        transform: translateY(-30px);
+    }
+}
+
+
+.cardContent{
+    padding: 20px 10px;
+
+    .cardHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .cardButtons{
+        button{
+            padding: 10px 50px;
+            margin: 20px 10px 20px 0px;
+        }
+    }
+
+    .locations{
+        font-size: 12px;
+
+        i{
+            color: $blue;
+        }
+    }
+}

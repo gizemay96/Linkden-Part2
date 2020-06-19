@@ -1,0 +1,42 @@
+@import "../../../assets/main.scss";
+
+.buttonCard{
+  border: none;
+  cursor: pointer;
+  background-color: $white;
+
+  &:hover{
+    box-shadow: 0px 0px 20px -8px $blue;
+  }
+}
+
+.cardContent{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.userText {
+  min-width: 200px;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+}
+
+.userName {
+  font-size: $text-md;
+  margin-bottom: 10px;
+  font-weight: $bold-font;
+}
+
+.userEmail {
+  font-size: $text-sm;
+  font-weight: $light-font;
+}
+
+.phoneNum{
+  padding: 0px 20px 15px 20px;
+  font-size: $text-sm;
+  text-align: right;
+  color: rgba(24, 24, 24, 0.3);
+}

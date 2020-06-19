@@ -1,0 +1,32 @@
+@import "../../../assets/main.scss";
+
+.btn {
+  border: none;
+  cursor: pointer;
+  background-color: $blue;
+  color: $white;
+  border-radius: $border-rad-md;
+  padding: 8px 20px;
+  margin-left: 20px;
+  font-size: $text-sm;
+  outline: none;
+  background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+
+  &:hover {
+    background-color: darken($color: $blue, $amount: 5);
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.Transparent{
+  background: transparent;
+  border: 1px solid $blue;
+  color: $blue;
+
+  &:hover{
+    color: $white;
+  }
+}

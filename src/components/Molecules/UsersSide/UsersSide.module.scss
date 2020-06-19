@@ -1,0 +1,53 @@
+@import "../../../assets/main.scss";
+
+.cardItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 51px;
+    border-bottom: $grey-border;
+
+    .cardLink{
+        display: grid;
+        grid-template-columns: 1fr 11fr;
+        text-align: left;
+        grid-gap: 20px;
+
+        i{
+            font-size: 15px;
+            width: 13px;
+        }
+
+        h5{
+      
+        }
+    }
+
+    i{
+        font-size: 12px;
+    }
+    
+    &:hover{
+        border-left: 7px solid $blue;
+        .cardLink{
+            padding-left: 10px;
+            
+        }
+    }
+
+    .invitationsNum{
+        color: #ED8F03;
+        display: flex;
+        align-items: center;
+
+        div{
+            width: 9px;
+            height: 9px;
+            border-radius: 90%;
+            background: linear-gradient(215.49deg, #FFB75E 5.4%, #ED8F03 93.45%);
+            margin-left: 5px;
+        }
+    }
+}
+
+

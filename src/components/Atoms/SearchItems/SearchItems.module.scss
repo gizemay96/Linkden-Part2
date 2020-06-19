@@ -1,0 +1,32 @@
+@import "../../../assets/main.scss";
+
+.searchItem{
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+    background-color: #E9F0F8;
+    padding: 15px 10px;
+    margin: 10px 0px;
+}
+
+
+.itemTitle{
+    display: flex;
+    h5{
+        padding-right: 5px;
+    }
+}
+
+.icons{
+    color: $blue;
+    font-size: 20px;
+}
+
+.searchText{
+    text-align: left;
+    font-size: 15px;
+    padding: 5px 0px;
+
+    h6{
+        font-weight: 100;
+    }
+}
